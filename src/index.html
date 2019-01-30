@@ -2,13 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Carta Secreta</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-      <p>Holis</p>
+    <div id="main">
+      <header id="header">
+        <h1>Carta Secreta</h1>
+      </header>
+      <section id="screen-main">
+        <p id="main-title">Encripta o descifra tu carta con "Cifrado César"</p>
+        <form action="index.html" method="post">
+          <textarea id="input-text-area" name="letter" placeholder="Texto a encriptar..." rows="15" cols="90"></textarea>
+          <input id="input-position" type="text" size="15" name="positions">
+          <p>Número de Posición</p><br>
+          <button id="main-button-encrypt" type="button" name="button-encrypt">Encriptar</button>
+          <button id="main-button-decipher" type="button" name="button-decipher">Descifrar</button>
+        </form>
+      </section>
+
+      <section id="screen-results">
+        <p id="main-title">Resultado</p>
+        <div id="title-text" >
+          <p>Texto Original</p>
+          <div id="original-text">
+          </div>
+        </div>
+
+        <div id="title-text">
+          <p>Texto <!-- Descifrado/Encriptado --> </p>
+          <div id="new-text">
+          </div>
+        </div>
+
+        <div>
+          <button id="second-buttons" type="button" name="button-return">Regresar</button>
+          <button id="second-buttons" type="button" name="button-copy">Copiar</button>
+        </div>
+      </section>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

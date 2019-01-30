@@ -1,0 +1,63 @@
+#main {
+ width: 850px;
+ text-align: center;
+ margin: auto;
+}
+
+h1{
+
+}
+
+#input-text-area{
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#input-position{
+  display: block;
+  width: 55px;
+  height: 20px;
+  margin-left: 397.5px;
+}
+
+p{
+  margin-top: 2px;
+}
+#main-button-decipher, #main-button-encrypt {
+  margin: 40px auto;
+  height: 50px;
+  width: 90px;
+}
+
+#original-text, #new-text {
+  display: inline-block;
+  overflow-y: scroll;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 15px;
+  width: 385px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+#original-text {
+  margin-right: 4px;
+}
+
+#title-text{
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+
+#second-buttons {
+  margin: 10px;
+  height: 50px;
+  width: 90px;
+  float: right;
+}
+
+[name=button-copy] {
+  margin-right: 10px;
+}
