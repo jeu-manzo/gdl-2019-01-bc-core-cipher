@@ -19,12 +19,6 @@ const inputPosition = document.getElementById('input-position');
 
 inputPosition.addEventListener("keyup", function(event) {
   position = event.target.value
-  // console.log(position)
-  // if (event.keyCode === "click") {
-  //    // Crear la acción del botón con el click
-  //    document.getElementById('main-button-decipher').click();
-  //    document.getElementById('main-button-encrypt').click();
-  // }
 });
 
 
