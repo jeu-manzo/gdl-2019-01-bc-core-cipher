@@ -22,20 +22,30 @@ inputPosition.addEventListener("keyup", function(event) {
 });
 
 
-document.getElementById("main-button-decipher").addEventListener("click", buttonDecipher);
-function buttonDecipher() {
-    // si pasa la validacion
-    if (position.length > 1) {
-      display([mainScreen], "none");
-      display([resultsScreen]);
-    }
-}
-
+//Botón encriptar
 document.getElementById("main-button-encrypt").addEventListener("click", buttonEncrypt);
 function buttonEncrypt() {
     // si pasa la validacion
-    if (position.length > 1) {
+    if (position.length >= 1) {
       display([mainScreen], "none");
       display([resultsScreen]);
+      let str = document.getElementById("input-text-area").value;
+      let inputPosition = Number(document.getElementById("input-position").value);
+      document.getElementById("new-text").innerHTML = window.cipher.encode(inputPosition, str);
+      document.getElementById('original-text').innerHTML = str;
+    }
+}
+
+//Botón Descifrar
+document.getElementById("main-button-decipher").addEventListener("click", buttonDecipher);
+function buttonDecipher() {
+    // si pasa la validacion
+    if (position.length >= 1) {
+      display([mainScreen], "none");
+      display([resultsScreen]);
+      let str = document.getElementById("input-text-area").value;
+      let inputPosition = Number(document.getElementById("input-position").value);
+      document.getElementById("new-text").innerHTML = window.cipher.decode(inputPosition, str);
+      document.getElementById('original-text').innerHTML = str;
     }
 }
