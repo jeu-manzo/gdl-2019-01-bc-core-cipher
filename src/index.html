@@ -12,9 +12,19 @@
       </header>
       <section id="screen-main">
         <p>Encripta o descifra tu carta con "Cifrado César"</p>
+        <div id="tooltip-text" class="tooltip">?
+          <span class="tooltiptext">El cifrado césar es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra en un número fijo de posiciones (desplazamiento) más adelante del mismo alfabeto.</span>
+        </div>
+
         <form action="index.html" method="post">
-          <textarea id="input-text-area" name="letter" placeholder="Texto a encriptar..." rows="15" cols="90"></textarea>
-          <input id="input-position" type="text" size="15" name="positions">
+          <textarea id="input-text-area" name="letter" placeholder="Ingresa tu texto..." rows="15" cols="45"></textarea>
+          <br>
+          <div id="prueba">
+            <input id="input-position" type="text" size="15" name="positions">
+            <div id="tooltip-position" class="tooltip">?
+              <span class="tooltiptext">Es la posición del desplazamiento que deseas que tome tu cifrado. Ejemplo: si eliges el número de posición "3", la letra "A" se cifra "D"; "B" se cifra "E", y así consecutivamente.</span>
+            </div>
+          </div>
           <p>Número de Posición</p><br>
           <button id="main-button-encrypt" type="button" name="button-encrypt">Encriptar</button>
           <button id="main-button-decipher" type="button" name="button-decipher">Descifrar</button>

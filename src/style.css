@@ -1,19 +1,85 @@
+/*body{
+  display: block;
+  background-image: url(images/scroll.png);
+  background-size: 700px 590px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}*/
+
+
 #main {
  width: 850px;
  text-align: center;
  margin: auto;
 }
 
-h1{
-
+h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-#input-text-area{
+
+#prueba input {
+  display: inline-block;
+  margin: inherit;
+}
+
+.tooltip {
+  font: bold 12px arial;
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2px 5px;
+  margin-bottom: 8px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  /*z-index: 80;*/
+  bottom: 125%;
+  /*left: 200%;*/
+  margin-left: -200px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#input-text-area {
+  text-align: center;
+  background-color: inherit;
+  font: bold 15px arial;
+  border: none;
   margin: auto;
   margin-bottom: 20px;
 }
 
 #input-position{
+  background-color: inherit;
   display: block;
   width: 55px;
   height: 20px;
@@ -23,10 +89,16 @@ h1{
 p{
   margin-top: 2px;
 }
+
+form p {
+  margin-bottom: 5px;
+}
+
 #main-button-decipher, #main-button-encrypt {
-  margin: 40px auto;
-  height: 50px;
-  width: 90px;
+  margin: 30px auto;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
 }
 
 #original-text, #new-text {

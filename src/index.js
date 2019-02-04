@@ -49,3 +49,21 @@ function buttonDecipher() {
       document.getElementById('original-text').innerHTML = str;
     }
 }
+
+//Botón Regresar
+document.getElementById('second-buttons-return').addEventListener('click', buttonReturn);
+function buttonReturn() {
+  location.reload(); //Para recargar la página
+  display([mainScreen]);
+  display([resultsScreen], "none");
+}
+
+//Botón Copiar
+document.getElementById('second-buttons-copy').addEventListener('click', buttonCopy);
+function buttonCopy() {
+  let range = document.createRange(); //Variable para crear un rango en el documento
+  range.selectNode(document.getElementById("new-text")); //seleccionar el elemento del documento al que le quiero pasar el rango
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand("copy");
+}
