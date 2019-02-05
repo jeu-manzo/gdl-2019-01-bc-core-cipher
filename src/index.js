@@ -67,3 +67,9 @@ function buttonCopy() {
   window.getSelection().addRange(range);
   document.execCommand("copy");
 }
+
+//Botón Copiar
+document.getElementById('second-buttons-mail').addEventListener('click', buttonMail);
+function buttonMail() {
+  window.location.href = "mailto:mail@example.org";
+}
