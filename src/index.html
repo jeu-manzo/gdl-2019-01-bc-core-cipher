@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Carta Secreta </title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   </head>
   <body>
     <div id="main">
@@ -11,7 +12,7 @@
         <h1>Carta Secreta</h1>
       </header>
       <section id="screen-main">
-        <p>Encripta o descifra tu carta con "Cifrado César"</p>
+        <p id="subtitle-main">Encripta o descifra tu carta con "Cifrado César"</p>
         <div id="tooltip-text" class="tooltip">?
           <span class="tooltiptext">El cifrado césar es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra en un número fijo de posiciones (desplazamiento) más adelante del mismo alfabeto.</span>
         </div>
@@ -32,7 +33,7 @@
       </section>
 
       <section id="screen-results">
-        <p>Resultado</p>
+        <p id="subtitle-screen-results"> </p>
         <div id="title-original-text" >
           <p>Texto Original</p>
           <div id="original-text">
@@ -40,7 +41,7 @@
         </div>
 
         <div id="title-new-text">
-          <p>Texto <!-- Descifrado/Encriptado --> </p>
+          <p id="subtitle-new-text"><!-- Descifrado/Encriptado --> </p>
           <div id="new-text">
           </div>
         </div>
