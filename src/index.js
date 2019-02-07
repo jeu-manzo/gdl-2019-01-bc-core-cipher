@@ -12,25 +12,30 @@ function display (elements, display = 'inline-block') {
 display([resultsScreen], "none");
 
 
-
-let position = "";
-
-const inputPosition = document.getElementById('input-position');
-
-inputPosition.addEventListener("keyup", function(event) {
-  position = event.target.value;
+let inputPosition = "";
+//funcion para crear un escucha que al soltar la teclas se ingrese el valor en la variable position
+const position = document.getElementById('input-position');
+position.addEventListener("keyup", function(event) {
+  inputPosition = event.target.value;
 });
+
+
+let str = "";
+//funcion para crear un escucha que al soltar la teclas se ingrese el valor en la variable text
+const text = document.getElementById('input-text-area');
+text.addEventListener("keyup", function(event) {
+  str = event.target.value;
+});
+
 
 
 //Botón encriptar
 document.getElementById("main-button-encrypt").addEventListener("click", buttonEncrypt);
 function buttonEncrypt() {
     // si pasa la validacion
-    if (position.length >= 1) {
+    if (inputPosition.length >= 1 && str.length >= 1) {
       display([mainScreen], "none");
       display([resultsScreen]);
-      let str = document.getElementById("input-text-area").value;
-      let inputPosition = Number(document.getElementById("input-position").value);
       document.getElementById("new-text").innerHTML = window.cipher.encode(inputPosition, str);
       document.getElementById('original-text').innerHTML = str;
     }
@@ -40,11 +45,9 @@ function buttonEncrypt() {
 document.getElementById("main-button-decipher").addEventListener("click", buttonDecipher);
 function buttonDecipher() {
     // si pasa la validacion
-    if (position.length >= 1) {
+    if (inputPosition.length >= 1 && str.length >= 1) {
       display([mainScreen], "none");
       display([resultsScreen]);
-      let str = document.getElementById("input-text-area").value;
-      let inputPosition = Number(document.getElementById("input-position").value);
       document.getElementById("new-text").innerHTML = window.cipher.decode(inputPosition, str);
       document.getElementById('original-text').innerHTML = str;
     }

@@ -1,12 +1,12 @@
-/*body{
-  display: block;
+body{
+  /* display: block;
   background-image: url(images/scroll.png);
   background-size: 700px 590px;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
-  background-color: black;
-}*/
+  background-position: center; */
+  background-color: #9CC39A;
+}
 
 
 #main {
