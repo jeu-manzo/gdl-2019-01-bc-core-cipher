@@ -50,7 +50,7 @@ function buttonDecipher() {
     if (inputPosition.length >= 1 && str.length >= 1) {
       display([mainScreen], "none");
       display([resultsScreen]);
-      document.getElementById("new-text").innerHTML = window.cipher.decode(inputPosition, str);
+      document.getElementById("new-text").innerHTML = window.cipher.decode(parseInt(inputPosition), str);
       document.getElementById('original-text').innerHTML = str;
       document.getElementById('subtitle-new-text').innerHTML = 'Texto Descifrado';
       document.getElementById('subtitle-screen-results').innerHTML = 'Descifrado';
