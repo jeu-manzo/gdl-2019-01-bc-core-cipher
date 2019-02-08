@@ -1,11 +1,5 @@
 body{
-  /* display: block;
-  background-image: url(images/scroll.png);
-  background-size: 700px 590px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center; */
-  background-color: #edebe1;
+  background-color: #d3f8e7;
 }
 
 
@@ -18,10 +12,10 @@ body{
 }
 
 h1 {
-  color: #fccb07;
+  color: #fdd741;
   text-shadow: 2px 2px #061d24;
-  margin-top: 15px;
-  margin-bottom: 25px;
+  margin-top: 5px;
+  margin-bottom: auto;
   font-size: 60px;
 }
 
@@ -36,21 +30,24 @@ h1 {
   margin: inherit;
 }
 
-.tooltip {
+.tooltip{
   font: bold 12px arial;
   position: relative;
-  display: inline-block;
+  background-color: #fdd741;
+  display: inline;
   border: 1px solid black;
   border-radius: 20px;
   padding: 2px 5px;
   margin-bottom: 8px;
+  margin-top: 2px;
 }
+
 
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 400px;
-  background-color: #555;
-  color: #fff;
+  background-color: #fde37b;
+  color: #061d24;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -71,7 +68,7 @@ h1 {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #061d24 transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
@@ -80,52 +77,64 @@ h1 {
 }
 
 #input-text-area {
+  height: 250px;
+  width: 520px;
   text-align: center;
-  background-color: #fbfbf9;
-  font: bold 15px arial;
+  color: #F4F3ED;
+  padding: 30px 10px;
+  background-color: #092b35;
+  font: bold 30px arial;
   border: none;
-  margin: auto;
+  border-radius: 30px;
+  margin-top: 5px;
   margin-bottom: 5px;
-  box-shadow: 3px 3px #dedbc8;
 }
 
 #input-position{
-  background-color: #4C525F;
-  background-color: #fbfbf9;
+  background-color: #092b35;
+  font: bold 18px arial;
+  text-align: center;
+  color: #F4F3ED;
   border: 2px #fbfbf9;
+  border-radius: 5px;
   display: block;
   width: 55px;
-  height: 20px;
+  height: 25px;
+  padding: 2px;
   margin-left: 397.5px;
-  box-shadow: 3px 3px #dedbc8;
 }
 
-p{
-  margin-top: 2px;
+p {
+  margin: 2px auto;
 }
 
 form p {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 #main-button-decipher, #main-button-encrypt {
-  background-color: #fccb07;
+  background-color: #fdd741;
   color: #061d24;
   border-color: #fccb07;
+  font: bold 13px arial;
   height: 40px;
   width: 80px;
   border-radius: 10px;
 }
 
 #original-text, #new-text {
+  background-color: #092b35;
+  color: #F4F3ED;
   display: inline-block;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  font: bold 30px arial;
   margin-top: 10px;
   margin-bottom: 5px;
   padding: 15px;
   width: 385px;
   height: 250px;
   border: 1px solid black;
+  border-radius: 30px;
 }
 
 #original-text {
@@ -140,6 +149,9 @@ form p {
 }
 
 #second-buttons-return, #second-buttons-mail, #second-buttons-copy {
+  background-color: #fdd741;
+  color: #061d24;
+  font: bold 13px arial;
   margin: 10px;
   height: 40px;
   width: 80px;

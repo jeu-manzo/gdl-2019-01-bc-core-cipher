@@ -39,7 +39,7 @@ function buttonEncrypt() {
       document.getElementById("new-text").innerHTML = window.cipher.encode(inputPosition, str);
       document.getElementById('original-text').innerHTML = str;
       document.getElementById('subtitle-new-text').innerHTML = 'Texto Cifrado';
-      document.getElementById('subtitle-screen-results').innerHTML = 'Encripado';
+      document.getElementById('subtitle-screen-results').innerHTML = 'Encritpado';
     }
 }
 
@@ -62,8 +62,6 @@ function buttonDecipher() {
 document.getElementById('second-buttons-return').addEventListener('click', buttonReturn);
 function buttonReturn() {
   location.reload(); //Para recargar la página
-  display([mainScreen]);
-  display([resultsScreen], "none");
 }
 
 //Botón Copiar
@@ -76,7 +74,7 @@ function buttonCopy() {
   document.execCommand("copy");
 }
 
-//Botón Copiar
+//Botón Correo
 document.getElementById('second-buttons-mail').addEventListener('click', buttonMail);
 function buttonMail() {
   window.location.href = "mailto:mail@example.org";
