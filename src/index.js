@@ -36,7 +36,7 @@ function buttonEncrypt() {
     if (inputPosition.length >= 1 && str.length >= 1) {
       display([mainScreen], "none");
       display([resultsScreen]);
-      document.getElementById("new-text").innerHTML = window.cipher.encode(inputPosition, str);
+      document.getElementById("new-text").innerHTML = window.cipher.encode(parseInt(inputPosition), str);
       document.getElementById('original-text').innerHTML = str;
       document.getElementById('subtitle-new-text').innerHTML = 'Texto Cifrado';
       document.getElementById('subtitle-screen-results').innerHTML = 'Encritpado';

@@ -11,10 +11,10 @@ window.cipher = {
        for (let j = 0; j < word.length; j++) {
          let singleChart = word[j]; //Variable para arrojar cada letra
          if(str == str.toUpperCase()) {
-           let chartAscii = singleChart.charCodeAt(0); //Convertir cada letra en Ascii
-           let encoded = (chartAscii - 65 + inputPosition) % 26 + 65; //Encriptar cada #Ascii con la fórmula
-           let encodedToChar = String.fromCharCode(encoded); //Convertir cada #Ascii Encriptado a letra
-           result.push(encodedToChar); //Ingresar al array result cada palabra ya codificada y convertida a letra
+          let chartAscii = singleChart.charCodeAt(0); //Convertir cada letra en Ascii
+          let encoded = (chartAscii - 65 + inputPosition) % 26 + 65; //Encriptar cada #Ascii con la fórmula
+          let encodedToChar = String.fromCharCode(encoded); //Convertir cada #Ascii Encriptado a letra
+          result.push(encodedToChar); //Ingresar al array result cada palabra ya codificada y convertida a letra
          } else{
             let chartAscii = singleChart.charCodeAt(0); //Convertir cada letra en Ascii
             let encoded2 = (chartAscii - 97 + inputPosition) % 26 + 97; //Encriptar cada #Ascii con la fórmula
