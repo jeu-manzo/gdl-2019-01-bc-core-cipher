@@ -10,7 +10,7 @@ window.cipher = {
        //Bucle que pasara por cada índice de cada cadena de el índice anterior (cada letra de cada palabra)
        for (let j = 0; j < word.length; j++) {
          let singleChart = word[j]; //Variable para arrojar cada letra
-         if(str == str.toUpperCase()) {
+         if(singleChart == singleChart.toUpperCase()) {
           let chartAscii = singleChart.charCodeAt(0); //Convertir cada letra en Ascii
           let encoded = (chartAscii - 65 + inputPosition) % 26 + 65; //Encriptar cada #Ascii con la fórmula
           let encodedToChar = String.fromCharCode(encoded); //Convertir cada #Ascii Encriptado a letra
@@ -41,7 +41,7 @@ window.cipher = {
        //Bucle que pasara por cada índice de cada cadena de el índice anterior (cada letra de cada palabra)
        for (let j = 0; j < word.length; j++) {
          let singleChart = word[j]; //Variable para arrojar cada letra
-         if(str == str.toUpperCase()) {
+         if(singleChart == singleChart.toUpperCase()) {
           let chartAscii = singleChart.charCodeAt(0); //Convertir cada letra en Ascii
           let encoded = (chartAscii + 65 - inputPosition) % 26 + 65; //Encriptar cada #Ascii con la fórmula
           let encodedToChar = String.fromCharCode(encoded); //Convertir cada #Ascii Encriptado a letra
